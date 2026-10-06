@@ -3,11 +3,11 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Takumi Kawahara | Portfolio</title>
-  <meta name="description" content="電子物理工学を学び、AIなどの最新技術に取り組む Takumi Kawahara のポートフォリオ。">
+  <title>河原 拓未 | Portfolio</title>
+  <meta name="description" content="大阪公立大学 工学部 電子物理工学科で半導体を学び、AIなどの最新技術に取り組む河原拓未のポートフォリオ。">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&family=Inter:wght@400;600;800&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -31,7 +31,7 @@
         <li><a href="#timeline">History</a></li>
         <li><a href="#projects">Projects</a></li>
         <li><a href="#skills">Skills</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a href="#vision">Vision</a></li>
       </ul>
     </nav>
   </header>
@@ -39,25 +39,35 @@
   <main id="top">
     <!-- ===== Hero ===== -->
     <section class="hero">
+      <canvas class="hero-canvas" aria-hidden="true"></canvas>
       <div class="container hero-inner">
-        <p class="hero-eyebrow">Electronic Physics × AI</p>
+        <p class="hero-eyebrow mono">&gt; Semiconductor × AI × Global</p>
         <h1 class="hero-title">
-          物理の原理から、<br>
-          <span class="grad">AIの未来</span>をつくる。
+          AIを<span class="strike">使う側</span>から、<br>
+          <span class="grad">AIを支える側</span>へ。
         </h1>
-        <p class="hero-name">
-          <span class="todo">氏名（漢字）</span>
-          <span class="hero-name-en">Takumi Kawahara</span>
-        </p>
+        <p class="hero-name">河原 拓未 <span class="hero-name-en">Takumi Kawahara</span></p>
         <p class="hero-meta">
-          <span class="todo">〇〇大学 〇〇学部</span> 電子物理工学 専攻 ／ <span class="todo">20XX年卒業予定</span>
+          <span>大阪公立大学 工学部 電子物理工学科 3年</span>
+          <span>副専攻「情報システム」修了</span>
+          <span>2028年3月 卒業見込み（大学院進学予定）</span>
         </p>
         <div class="hero-cta">
           <a href="#strengths" class="btn btn-primary">私の強みを見る</a>
-          <a href="#contact" class="btn btn-ghost">連絡先</a>
+          <a href="#timeline" class="btn btn-ghost">これまでの歩み</a>
         </div>
       </div>
-      <div class="hero-bg" aria-hidden="true"></div>
+      <a href="#numbers" class="scroll-hint" aria-label="下へスクロール"><span></span></a>
+    </section>
+
+    <!-- ===== Numbers ===== -->
+    <section id="numbers" class="numbers">
+      <div class="container numbers-grid">
+        <div class="num reveal"><p class="num-value"><span class="count" data-to="900">900</span></p><p class="num-label">TOEIC L&amp;R スコア</p></div>
+        <div class="num reveal"><p class="num-value">準1<small>級</small></p><p class="num-label">実用英語技能検定</p></div>
+        <div class="num reveal"><p class="num-value"><span class="count" data-to="4">4</span><small>ヶ月</small></p><p class="num-label">高1でのアメリカ単身留学</p></div>
+        <div class="num reveal"><p class="num-value">2<small>領域</small></p><p class="num-label">電子物理（主）× 情報システム（副）</p></div>
+      </div>
     </section>
 
     <!-- ===== About ===== -->
@@ -67,18 +77,25 @@
         <div class="about-grid">
           <div class="about-text reveal">
             <p class="lead">
-              大学で電子物理工学を学びながら、AIをはじめとする最新技術に自ら手を動かして触れています。
+              周りと同じ道ではなく、自分が本当にやりたい道を選び、やり抜いてきました。
             </p>
-            <p class="todo">
-              ここに「自分は何者で、何を大切にしていて、将来何をしたいか」を3〜4文で記入。
-              例：きっかけとなった原体験 → 今取り組んでいること → 社会人として実現したいこと。
+            <p>
+              中高大一貫校に通いながら、高校1年生で同級生の誰よりも先にアメリカへ単身留学し、
+              大学は内部進学ではなく外部受験を選んで大阪公立大学に現役合格しました。
+            </p>
+            <p>
+              現在は電子物理工学科で半導体を学ぶと同時に、副専攻で情報システムを修め、
+              生成AIを日常的に活用しています。
+              「AIを支えるハードウェア」と「AIを使いこなすソフトウェア」の両面を理解した技術者として、
+              世界を舞台に活躍することが目標です。
             </p>
           </div>
           <ul class="about-facts reveal">
-            <li><span>専攻</span>電子物理工学</li>
-            <li><span>関心領域</span>AI ／ <span class="todo">半導体・量子 など</span></li>
-            <li><span>志望領域</span><span class="todo">志望業界・職種</span></li>
-            <li><span>趣味</span><span class="todo">趣味・特技</span></li>
+            <li><span>所属</span>大阪公立大学 工学部<br>電子物理工学科 3年</li>
+            <li><span>副専攻</span>情報システム（修了）</li>
+            <li><span>進路</span>大学院進学予定<br>（2027年4月 研究室配属予定）</li>
+            <li><span>志望領域</span>半導体 ／ IT</li>
+            <li><span>趣味</span>海外旅行・フルマラソン・登山</li>
           </ul>
         </div>
       </div>
@@ -88,39 +105,48 @@
     <section id="strengths" class="section section-alt">
       <div class="container">
         <h2 class="section-title"><span>02</span>Strengths</h2>
-        <p class="section-sub">面接官の方に最も伝えたい、私の強みです。</p>
+        <p class="section-sub">面接官の方に最も伝えたい、3つの強みです。</p>
 
         <div class="strength-grid">
           <article class="strength-card reveal">
-            <div class="strength-icon" aria-hidden="true">∞</div>
-            <h3>継続力</h3>
-            <p class="strength-catch">決めたことを、結果が出るまでやり切る。</p>
-            <dl class="star">
-              <dt>状況</dt><dd class="todo">どんな状況・目標だったか</dd>
-              <dt>行動</dt><dd class="todo">何を・どのくらいの期間・どんな工夫で続けたか</dd>
-              <dt>成果</dt><dd class="todo">数字で示せる結果（例：〇年間毎日、〇〇点→〇〇点）</dd>
-            </dl>
-          </article>
-
-          <article class="strength-card reveal">
             <div class="strength-icon" aria-hidden="true">→</div>
             <h3>行動力</h3>
-            <p class="strength-catch">興味を持ったら、まず手を動かす。</p>
+            <p class="strength-catch">誰もいない場所へ、最初に飛び込む。</p>
             <dl class="star">
-              <dt>状況</dt><dd class="todo">どんな課題・きっかけがあったか</dd>
-              <dt>行動</dt><dd class="todo">自分から何を始めたか（誰に頼まれたわけでもなく）</dd>
-              <dt>成果</dt><dd class="todo">得られた結果・周囲への影響</dd>
+              <dt>状況</dt>
+              <dd>高校1年生当時、同級生で留学経験のある人は一人もいなかった。英語は苦手科目だった。</dd>
+              <dt>行動</dt>
+              <dd>自ら留学を決意し、単身でアメリカの現地高校に4ヶ月間在籍。一人で渡航し、言葉も文化も違う環境に飛び込んだ。</dd>
+              <dt>成果</dt>
+              <dd>苦手だった英語を克服し、現在は TOEIC 900点・英検準1級を取得。大学でも海外旅行をツアーに頼らず自力で計画・手配している。</dd>
             </dl>
           </article>
 
           <article class="strength-card reveal">
-            <div class="strength-icon" aria-hidden="true">⚛</div>
-            <h3>技術への探究心</h3>
-            <p class="strength-catch">原理を理解し、新しい技術を自分の武器にする。</p>
+            <div class="strength-icon" aria-hidden="true">∞</div>
+            <h3>継続力</h3>
+            <p class="strength-catch">自分で決めた目標を、最後までやり抜く。</p>
             <dl class="star">
-              <dt>状況</dt><dd class="todo">AIなどに触れ始めたきっかけ</dd>
-              <dt>行動</dt><dd class="todo">具体的に使った・作ったもの</dd>
-              <dt>成果</dt><dd class="todo">それによって何ができるようになったか</dd>
+              <dt>状況</dt>
+              <dd>関西学院の中高大一貫校に在籍し、受験せずに大学へ進学できる環境だった。</dd>
+              <dt>行動</dt>
+              <dd>電子物理を学びたい一心で外部受験を決意。周囲が内部進学を選ぶ中、自分と周りを比べず、受験勉強を続けた。</dd>
+              <dt>成果</dt>
+              <dd>大阪公立大学に現役合格。入学後も卒業要件外の副専攻「情報システム」を自主的に修了した。</dd>
+            </dl>
+          </article>
+
+          <article class="strength-card reveal">
+            <div class="strength-icon" aria-hidden="true">✦</div>
+            <h3>主体性・巻き込む力</h3>
+            <p class="strength-catch">指示を待たず、自ら価値をつくりに行く。</p>
+            <dl class="star">
+              <dt>状況</dt>
+              <dd>スターバックスでのアルバイト。<span class="todo">勤務期間（例：202X年〜）</span></dd>
+              <dt>行動</dt>
+              <dd>自分からお客様に会話を持ちかけ、好みに合う商品を提案。手の空いた時間には、提供期限の近いドリンクを自ら店内でテイスティングとして配り、商品の魅力を伝えている。</dd>
+              <dt>成果</dt>
+              <dd class="todo">お客様や店舗からの反応・変化（例：常連のお客様が増えた、店長に評価された 等）</dd>
             </dl>
           </article>
         </div>
@@ -133,43 +159,62 @@
         <h2 class="section-title"><span>03</span>Expertise</h2>
         <div class="expertise-grid">
           <article class="expertise-card reveal">
-            <h3>電子物理工学</h3>
+            <p class="card-kicker mono">// hardware</p>
+            <h3>電子物理工学 — 半導体</h3>
             <p>
-              電子・光・物質のふるまいを物理の原理から理解し、デバイスや技術へ応用する学問です。
+              電子物理工学科で、半導体をはじめとする電子デバイスの基礎を学んでいます。
+              生成AIの進化を支えているのは、計算を担う半導体です。その「AIを支える側」を
+              物理の原理から理解することが、私の専門の軸です。
             </p>
-            <p class="label">履修・研究テーマ</p>
             <ul class="tag-list">
-              <li class="todo">実際に履修した科目名</li>
-              <li class="todo">研究室・研究テーマ</li>
+              <li>半導体</li>
+              <li>電子デバイス</li>
+              <li>2027年4月 研究室配属予定</li>
             </ul>
-            <p class="todo">
-              学んだことを「専門外の面接官にも伝わる言葉」で1〜2文。
-              例：「〇〇の研究を通じて、仮説→実験→検証のサイクルを回す力を身につけました。」
-            </p>
           </article>
 
           <article class="expertise-card reveal">
-            <h3>AI・最新技術</h3>
+            <p class="card-kicker mono">// software</p>
+            <h3>副専攻 情報システム</h3>
             <p>
-              生成AIなどの最新技術を、使うだけでなく仕組みにも関心を持ちながら実際に活用しています。
+              卒業要件には含まれない他学科の科目を自主的に履修し、
+              副専攻「情報システム」を修了しました。
+              ハードウェアだけでなく、その上で動くソフトウェア・情報技術の知識も身につけています。
             </p>
-            <p class="label">使っている技術・ツール</p>
             <ul class="tag-list">
-              <li class="todo">例：ChatGPT / Claude</li>
-              <li class="todo">例：Python</li>
-              <li class="todo">例：その他</li>
+              <li>情報システム</li>
+              <li>ITパスポート</li>
             </ul>
-            <p class="todo">
-              AIを使って「何をしたか・何を作ったか」を具体的に。
-            </p>
           </article>
-        </div>
-        <div class="bridge reveal">
-          <p><strong>物理 × AI</strong> の掛け合わせが私の独自性です。</p>
-          <p class="todo">
-            2つの専門性がどうつながるか（例：AIを支える半導体を物理から理解している／
-            研究データの解析にAIを活用している など）を記入。
-          </p>
+
+          <article class="expertise-card reveal">
+            <p class="card-kicker mono">// ai</p>
+            <h3>生成AIの活用</h3>
+            <p>
+              Claude の有料プラン（Pro）を契約し、Claude Code を使った AI との協働開発を実践しています。
+              このポートフォリオサイトも、AI と対話しながら設計・制作しました。
+            </p>
+            <ul class="tag-list">
+              <li>Claude Pro</li>
+              <li>Claude Code</li>
+              <li>AI協働開発</li>
+            </ul>
+          </article>
+
+          <article class="expertise-card reveal">
+            <p class="card-kicker mono">// global</p>
+            <h3>英語・グローバル</h3>
+            <p>
+              高校での留学を機に英語を克服し、TOEIC 900点・英検準1級を取得しました。
+              一方で、会話では言葉に詰まる場面がまだあると自覚しており、
+              スピーキング力の向上に継続して取り組んでいます。
+            </p>
+            <ul class="tag-list">
+              <li>TOEIC 900</li>
+              <li>英検準1級</li>
+              <li>アメリカ留学 4ヶ月</li>
+            </ul>
+          </article>
         </div>
       </div>
     </section>
@@ -181,38 +226,45 @@
         <p class="section-sub">これまでの歩みを、簡単にまとめました。</p>
         <ol class="timeline">
           <li class="reveal">
-            <span class="tl-year todo">20XX</span>
+            <span class="tl-year">2018</span>
             <div class="tl-body">
-              <h3 class="todo">中学・高校時代</h3>
-              <p class="todo">打ち込んだこと（部活・勉強など）と、そこから得たもの</p>
+              <h3>中学受験を経て、関西学院中学部へ入学</h3>
+              <p>小学生ながら受験勉強をやり抜き、合格。努力を続けることの大切さを初めて実感した。中学ではバスケットボール部で部活動に打ち込んだ。</p>
             </div>
           </li>
           <li class="reveal">
-            <span class="tl-year todo">20XX</span>
+            <span class="tl-year">2021</span>
             <div class="tl-body">
-              <h3><span class="todo">〇〇大学</span> 入学</h3>
-              <p class="todo">電子物理工学を選んだ理由</p>
+              <h3>高校1年生で、アメリカへ単身留学（4ヶ月）</h3>
+              <p>同級生で最初の留学者として、一人で渡米し現地の高校に通った。挫折も味わったが、英語力に加え、行動することの重要性と異文化への理解を得た。人生に大きな影響を与えた経験。</p>
             </div>
           </li>
           <li class="reveal">
-            <span class="tl-year todo">20XX</span>
+            <span class="tl-year">2022</span>
             <div class="tl-body">
-              <h3>AI・最新技術との出会い</h3>
-              <p class="todo">きっかけと、その後の取り組み</p>
+              <h3>生成AIの登場で、進路を再考</h3>
+              <p>当初は情報系の学科でプログラミングを学ぶつもりだったが、生成AIがプログラミングの世界に与えた衝撃を受け、「AIを支える半導体をつくる側」に関心を持った。</p>
             </div>
           </li>
           <li class="reveal">
-            <span class="tl-year todo">20XX</span>
+            <span class="tl-year">2024</span>
             <div class="tl-body">
-              <h3 class="todo">研究室配属 / インターン / 課外活動 など</h3>
-              <p class="todo">内容と学び</p>
+              <h3>外部受験で、大阪公立大学 工学部 電子物理工学科に現役合格</h3>
+              <p>内部進学の道があったが、電子物理を学ぶために外部受験を選択。周りと比べず、自分の目標を追い続けた。</p>
             </div>
           </li>
           <li class="reveal">
-            <span class="tl-year">Now</span>
+            <span class="tl-year">大学</span>
             <div class="tl-body">
-              <h3>就職活動</h3>
-              <p class="todo">今、どんな軸で企業を見ているか</p>
+              <h3>学業・副専攻・AI・海外、すべてに挑戦</h3>
+              <p>副専攻「情報システム」を修了。TOEIC 900点を取得。生成AIを本格的に活用し始めた。海外旅行は自分で計画・手配し、フルマラソンや富士登山にも挑戦している。</p>
+            </div>
+          </li>
+          <li class="reveal">
+            <span class="tl-year">2027</span>
+            <div class="tl-body">
+              <h3>研究室配属（予定）</h3>
+              <p>半導体分野での研究に取り組み、2028年3月の学部卒業後は大学院へ進学予定。</p>
             </div>
           </li>
         </ol>
@@ -223,28 +275,43 @@
     <section id="projects" class="section">
       <div class="container">
         <h2 class="section-title"><span>05</span>Projects</h2>
-        <p class="section-sub">頑張ってきたこと・作ってきたもの。</p>
+        <p class="section-sub">取り組んできたこと、そしてこれから取り組むこと。</p>
         <div class="project-grid">
           <article class="project-card reveal">
-            <p class="project-tag">Portfolio</p>
+            <p class="project-tag">Done · Web</p>
             <h3>このポートフォリオサイト</h3>
             <p>
-              自分の経歴と強みを伝えるために、AI（Claude Code）と対話しながら設計・制作。
-              HTML / CSS / JavaScript で構築し、GitHubでバージョン管理しています。
+              自分の経歴と強みを伝えるために、Claude Code と対話しながら設計・制作。
+              HTML / CSS / JavaScript で構築し、GitHub でバージョン管理しています。
             </p>
-            <ul class="tag-list small"><li>HTML</li><li>CSS</li><li>JavaScript</li><li>GitHub</li><li>AI協働開発</li></ul>
+            <ul class="tag-list small"><li>HTML</li><li>CSS</li><li>JavaScript</li><li>GitHub</li></ul>
           </article>
           <article class="project-card reveal">
-            <p class="project-tag todo">カテゴリ</p>
-            <h3 class="todo">取り組み・作品名</h3>
-            <p class="todo">目的・自分の役割・工夫した点・成果</p>
-            <ul class="tag-list small"><li class="todo">使用技術</li></ul>
+            <p class="project-tag">Ongoing · Travel</p>
+            <h3>自力で組む海外旅行</h3>
+            <p>
+              ツアー会社に任せず、現地のサイトまで自分で調べて航空券・宿・移動を手配。
+              できるだけ費用を抑えながら、各国の文化に直接触れている。
+            </p>
+            <ul class="tag-list small"><li class="todo">訪問国数・主な訪問国</li></ul>
           </article>
           <article class="project-card reveal">
-            <p class="project-tag todo">カテゴリ</p>
-            <h3 class="todo">取り組み・作品名</h3>
-            <p class="todo">目的・自分の役割・工夫した点・成果</p>
-            <ul class="tag-list small"><li class="todo">使用技術</li></ul>
+            <p class="project-tag">Ongoing · Challenge</p>
+            <h3>フルマラソン・富士登山</h3>
+            <p>
+              体力的に限界を試されるアクティビティにも、自ら目標を立てて挑戦している。
+            </p>
+            <ul class="tag-list small"><li class="todo">大会名・タイム・登頂年など</li></ul>
+          </article>
+          <article class="project-card next reveal">
+            <p class="project-tag">Next · AI</p>
+            <h3>AIを使ったタスク管理システム</h3>
+            <p>1日のタスクを管理する仕組みを、AIを活用して自作する予定。</p>
+          </article>
+          <article class="project-card next reveal">
+            <p class="project-tag">Next · AI</p>
+            <h3>AIを活用したLINEスタンプ制作</h3>
+            <p>生成AIを使ったクリエイティブ制作に挑戦し、実際に販売まで行う予定。</p>
           </article>
         </div>
       </div>
@@ -256,37 +323,52 @@
         <h2 class="section-title"><span>06</span>Skills &amp; Certifications</h2>
         <div class="skills-grid">
           <div class="skill-block reveal">
-            <h3>Programming</h3>
+            <h3>資格</h3>
             <ul class="skill-list">
-              <li><span>HTML / CSS</span><span class="todo">レベル</span></li>
-              <li><span class="todo">Python など</span><span class="todo">レベル</span></li>
+              <li><span>TOEIC L&amp;R</span><span>900点</span></li>
+              <li><span>実用英語技能検定</span><span>準1級</span></li>
+              <li><span>ITパスポート</span><span>合格</span></li>
+              <li><span>普通自動車第一種運転免許</span><span>取得</span></li>
             </ul>
           </div>
           <div class="skill-block reveal">
-            <h3>Tools</h3>
+            <h3>学術</h3>
             <ul class="skill-list">
-              <li><span>Git / GitHub</span><span class="todo">レベル</span></li>
-              <li><span>生成AIツール</span><span class="todo">レベル</span></li>
+              <li><span>電子物理工学</span><span>主専攻</span></li>
+              <li><span>情報システム</span><span>副専攻 修了</span></li>
             </ul>
           </div>
           <div class="skill-block reveal">
-            <h3>資格・語学</h3>
+            <h3>Tech</h3>
             <ul class="skill-list">
-              <li><span class="todo">TOEIC など</span><span class="todo">スコア</span></li>
-              <li><span class="todo">取得資格</span><span class="todo">取得年月</span></li>
+              <li><span>生成AI（Claude）</span><span>日常的に活用</span></li>
+              <li><span>Claude Code</span><span>学習中</span></li>
+              <li><span>HTML / CSS / Git</span><span>学習中</span></li>
             </ul>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- ===== Contact ===== -->
-    <section id="contact" class="section contact">
+    <!-- ===== Vision ===== -->
+    <section id="vision" class="section vision">
       <div class="container">
-        <h2 class="section-title"><span>07</span>Contact</h2>
-        <p class="contact-lead">最後までご覧いただき、ありがとうございました。</p>
+        <h2 class="section-title"><span>07</span>Vision</h2>
+        <div class="vision-box reveal">
+          <p class="vision-quote">
+            AIの時代を、<span class="grad">支える側</span>で生きる。
+          </p>
+          <p>
+            AIは、かつてのインターネットのように社会を大きく変えつつあります。
+            その変化に置いていかれるのではなく、AIを動かす半導体を理解し、
+            AIを使いこなし、そして国境を越えて価値を生み出せる人材になりたいと考えています。
+          </p>
+          <p>
+            大学院では半導体分野の研究を深め、行動力と継続力を武器に、
+            半導体・IT業界で世界を舞台に挑戦していきます。
+          </p>
+        </div>
         <div class="contact-links">
-          <a class="btn btn-primary todo" href="mailto:">メールアドレス（公開用）</a>
           <a class="btn btn-ghost" href="https://github.com/takumiin" target="_blank" rel="noopener">GitHub</a>
         </div>
       </div>
